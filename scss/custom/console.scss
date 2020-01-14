@@ -1,0 +1,94 @@
+@include media-breakpoint-down(xs) {}
+@include media-breakpoint-down(sm) {
+  #console-img {
+    background-image: url("../img/kanye.jpg");
+    height: 40vh;
+    background-size: cover;
+  }
+
+  #console {
+    height: 60vh;
+    border: 5px solid #B6A259;
+    padding: 24px;
+
+    #display {
+      overflow: scroll;
+      background-color: white;
+      padding: 16px;
+      border: 2px solid #B6A259;
+      height: 35vh;
+
+      .active {
+        background-color: white;
+        color: black;
+      }
+    }
+
+    a {
+      position: relative;
+      color: #B6A259;
+      margin-right: 8px;
+      margin-bottom: 8px;
+      border: 3px solid #B6A259;
+    }
+
+    .active {
+      background-color: $primary;
+      border: 0;
+      color: white;
+      padding-top: 10px;
+    }
+
+    .dark {
+      background-color: #B6A259;
+      color: #F8F1D4;
+    }
+  }
+}
+@include media-breakpoint-up(md) {
+  #console-img {
+    background-image: url("../img/kanye.jpg");
+    height: 100vh;
+    background-size: cover;
+  }
+
+  #console {
+    height: 100vh;
+    border: 5px solid #B6A259;
+    padding: 24px;
+
+    #display {
+      overflow: scroll;
+      background-color: white;
+      padding: 16px;
+      border: 2px solid #B6A259;
+      height: 40vh;
+
+      .active {
+        background-color: white;
+        color: black;
+      }
+    }
+
+    a {
+      position: relative;
+      color: #B6A259;
+      margin-right: 8px;
+      margin-bottom: 8px;
+      border: 3px solid #B6A259;
+    }
+
+    .active {
+      background-color: $primary;
+      border: 0;
+      color: white;
+      padding-top: 10px;
+    }
+
+    .dark {
+      background-color: #B6A259;
+      color: #F8F1D4;
+    }
+  }
+}
+@include media-breakpoint-up(lg) {}
