@@ -9,10 +9,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
 
+        <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 
         <link rel="stylesheet" href="css/style.css">
-        <title>thai</title>
+        <title>Jurrasic park</title>
     </head>
 
     <body>
@@ -34,6 +36,10 @@
             </div>
 
         </section>
+        <div id="menu">
+          
+        </div>
+
         <section id="park">
             <div class="container-fluid">
                 <div class="row">
@@ -42,32 +48,32 @@
 
                         <div class="tab-content mb-3" id="display">
                             <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                                <h1>The island</h1>
+                                <h2>The island</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                                     commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
                                     anim id est laborum.</p>
 
                             </div>
                             <div class="tab-pane fade" id="pills-movie" role="tabpanel" aria-labelledby="pills-movie-tab">
-                                <h1>The movie</h1>
+                                <h2>The movie</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                                     commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
                                     anim id est laborum.</p>
                             </div>
                             <div class="tab-pane fade" id="pills-hotel" role="tabpanel" aria-labelledby="pills-hotel-tab">
-                                <h1>The hotel</h1>
+                                <h2>The hotel</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                                     commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
                                     anim id est laborum.</p>
                             </div>
                             <div class="tab-pane fade" id="pills-dining" role="tabpanel" aria-labelledby="pills-dining-tab">
-                                <h1>dining</h1>
+                                <h2>dining</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                                     commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
                                     anim id est laborum.</p>
                             </div>
                             <div class="tab-pane fade" id="pills-activities" role="tabpanel" aria-labelledby="pills-activities-tab">
-                                <h1>Activities</h1>
+                                <h2>Activities</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                                     commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
                                     anim id est laborum.</p>
@@ -98,16 +104,42 @@
         </section>
         <section id="dino">
             <div class="container-fluid">
+                <div class="row pt-5">
+                    <h2 class="col-12 text-center mx-auto mt-3 mb-3">Our Dinosaurs</h2>
+                </div>
                 <div class="row">
-                    <h2>Our Dinosaurs</h2>
-                    <div class="container-fluid">
+                    <div class="col-12 col-lg-8 mx-auto">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide dino-1"></div>
+                                <div class="swiper-slide dino-2"></div>
+                                <div class="swiper-slide dino-3"></div>
+
+                            </div>
+                            <!-- Add Pagination -->
 
 
-
-
+                        </div>
                     </div>
 
                 </div>
+                <div class="row">
+                    <div class="col-12 col-lg-8 description-box mt-5 mx-auto mb-5">
+                        <h2>Triceratops</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                            laborum.</p>
+                        <a class="button-prev btn btn-primary">previous</a>
+                        <a class="button-next btn btn-primary">next</a>
+
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
         </section>
         <section id="characters">
             <div class="container-fluid">
@@ -122,10 +154,10 @@
 
                 <div class="row">
                     <div class="col-8 offset-3">
-                        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active character-1 d-flex">
-                                    <div class="col-5">
+                        <div id="carouselExampleFade" class="carousel slide carousel-fade mt-5" data-ride="carousel">
+                            <div class="carousel-inner mt-5">
+                                <div class="carousel-item active d-flex p-0 mt-5">
+                                    <div class="col-5 p-0">
                                         <h2>title 1</h2>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                                             ex
@@ -137,23 +169,24 @@
 
                                     <div id="character-img-1" class="col-6 bg-primary ml-5">foto komt hier</div>
                                 </div>
-                                <div class="carousel-item character-2 d-flex">
-                                  <div class="col-5">
-                                      <h2>title 2</h2>
-                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                                          ex
-                                          ea
-                                          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                                          mollit anim
-                                          id est laborum.</p>
-                                  </div>
+                                <div class="carousel-item d-flex p-0 mt-5">
+                                    <div class="col-5 p-0">
+                                        <h2>title 2</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                                            ex
+                                            ea
+                                            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                            mollit anim
+                                            id est laborum.</p>
+                                    </div>
                                     <div id="character-img-2" class="col-6 bg-primary ml-5">foto moet hier</div>
                                 </div>
-                                <div class="carousel-item d-flex">
-                                  <div class="col-5">
-                                      <h2>Dennis Nedry</h2>
-                                      <p>Dennis Nedry was a computer programmer at Jurassic Park and a minor antagonist. Due to his financial problems and low salary, he accepted a bribe from Biosyn to smuggle dinosaur embryos off the island. His last name is an anagram of nerdy.</p>
-                                  </div>
+                                <div class="carousel-item d-flex p-0 mt-5">
+                                    <div class="col-5 p-0">
+                                        <h2>Dennis Nedry</h2>
+                                        <p>Dennis Nedry was a computer programmer at Jurassic Park and a minor antagonist. Due to his financial problems and low salary, he accepted a bribe from Biosyn to smuggle dinosaur embryos off the island. His
+                                            last name is an anagram of nerdy.</p>
+                                    </div>
                                     <div id="character-img-3" class="col-6 bg-primary ml-5"></div>
 
 
@@ -181,7 +214,9 @@
         <section id="tickets">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-12 col-lg-8 text-right offset-lg-3 mt-5"><h2 class="mt-5 ">Get your tickets now or else ...</h2></div>
+                    <div class="col-12 col-lg-8 text-right offset-lg-3 mt-5">
+                        <h2 class="mt-5 ">Get your tickets now or else ...</h2>
+                    </div>
                 </div>
 
             </div>
@@ -192,28 +227,14 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+        <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+
+
         <script type="text/javascript" src="js/main.js">
 
         </script>
-        <script type="text/javascript">
-            $(document).ready(function() {
-                // Transition effect for navbar
-                $(window).scroll(function() {
-                    // checks if window is scrolled more than 500px, adds/removes solid class
 
-                    if ($(this).scrollTop() > 500) {
-                        $('#sidebar').addClass('slideIn');
-
-                    } else {
-                        $('#sidebar').removeClass('slideIn');
-
-                    }
-                });
-
-
-            });
-
-        </script>
     </body>
 
 </html>

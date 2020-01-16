@@ -8151,7 +8151,7 @@ a {
 
 @media (max-width: 767.98px) {
   #console-img {
-    background-image: url("../img/kanye.jpg");
+    background-image: url("../img/map.png");
     height: 40vh;
     background-size: cover; }
   #console {
@@ -8184,7 +8184,7 @@ a {
 
 @media (min-width: 768px) {
   #console-img {
-    background-image: url("../img/kanye.jpg");
+    background-image: url("../img/map.png");
     height: 100vh;
     background-size: cover; }
   #console {
@@ -8216,14 +8216,22 @@ a {
       color: #F8F1D4; } }
 
 #character-img-1 {
-  height: 25vw; }
+  height: 25vw;
+  background-image: url("../img/nerdy.png");
+  background-size: cover;
+  background-position: center;
+  border: 5px solid #B6A259; }
 
 #character-img-2 {
-  height: 25vw; }
+  height: 25vw;
+  background-image: url("../img/nerdy.png");
+  background-size: cover;
+  background-position: center;
+  border: 5px solid #B6A259; }
 
 #character-img-3 {
   height: 25vw;
-  background-image: url(../img/nerdy.png);
+  background-image: url("../img/nerdy.png");
   background-size: cover;
   background-position: center;
   border: 5px solid #B6A259; }
@@ -8271,16 +8279,86 @@ body {
   height: 100vh; }
 
 #dino {
-  height: 100vh;
+  min-height: 100vh;
   background-color: #EAE0B9; }
+  #dino h2 {
+    color: #68291A;
+    font-size: 5em; }
+  #dino .swiper-button-prev:after {
+    content: "" !important; }
+  #dino .description-box {
+    background-color: #FFFAE7;
+    padding: 24px; }
 
 #characters {
-  height: 100vh; }
+  min-height: 100vh; }
+  #characters h2 {
+    color: #68291A;
+    font-size: 4em; }
+  #characters .carousel-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
 
 #tickets {
   height: 100vh;
-  background-image: url(../img/contact.png);
+  background-image: url("../img/contact.png");
   background-size: cover; }
   #tickets h2 {
     font-size: 5em;
     color: #68291A; }
+
+.swiper-container {
+  width: 100%;
+  height: 40vh; }
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  opacity: 0.5;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+  -webkit-transition: .2s ease-in;
+  -o-transition: .2s ease-in;
+  transition: .2s ease-in; }
+
+.swiper-slide.swiper-slide-active {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .2s ease-in;
+  -o-transition: .2s ease-in;
+  transition: .2s ease-in; }
+
+.dino-1 {
+  background-image: url("../img/dino1.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.dino-2 {
+  background-image: url("../img/dino2.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.dino-3 {
+  background-image: url("../img/dino3.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat; }
