@@ -8149,6 +8149,31 @@ h3 {
 a {
   font-family: african; }
 
+#explore {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  #explore #intro-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    #explore #intro-block h1 {
+      color: black; }
+
 @media (max-width: 767.98px) {
   #console-img {
     background-image: url("../img/map.png");
@@ -8215,69 +8240,6 @@ a {
       background-color: #B6A259;
       color: #F8F1D4; } }
 
-#character-img-1 {
-  height: 25vw;
-  background-image: url("../img/prof.jpg");
-  background-size: cover;
-  background-position: center;
-  border: 5px solid #B6A259; }
-
-#character-img-2 {
-  height: 25vw;
-  background-image: url("../img/alan.jpg");
-  background-size: cover;
-  background-position: center;
-  border: 5px solid #B6A259; }
-
-#character-img-3 {
-  height: 25vw;
-  background-image: url("../img/nerdy.png");
-  background-size: cover;
-  background-position: center;
-  border: 5px solid #B6A259; }
-
-.carousel {
-  max-width: 100%; }
-
-* {
-  padding: 0;
-  margin: 0; }
-
-html {
-  scroll-behavior: smooth; }
-
-body {
-  background-color: #F8F1D4;
-  background-size: contain; }
-
-#explore {
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
-  #explore #intro-block {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
-    #explore #intro-block h1 {
-      color: black; }
-
-#park {
-  height: 100vh; }
-
 #dino {
   min-height: 100vh;
   background-color: #EAE0B9; }
@@ -8289,24 +8251,6 @@ body {
   #dino .description-box {
     background-color: #FFFAE7;
     padding: 24px; }
-
-#characters {
-  min-height: 100vh; }
-  #characters h2 {
-    color: #68291A;
-    font-size: 4em; }
-  #characters .carousel-item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-
-#tickets {
-  height: 100vh;
-  background-image: url("../img/contact.png");
-  background-size: cover; }
-  #tickets h2 {
-    font-size: 5em;
-    color: #68291A; }
 
 .swiper-container {
   width: 100%;
@@ -8362,3 +8306,59 @@ body {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat; }
+
+#characters {
+  min-height: 100vh; }
+  #characters h2 {
+    color: #68291A;
+    font-size: 4em; }
+  #characters .carousel-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+
+#character-img-1 {
+  height: 25vw;
+  background-image: url("../img/prof.jpg");
+  background-size: cover;
+  background-position: center;
+  border: 5px solid #B6A259; }
+
+#character-img-2 {
+  height: 25vw;
+  background-image: url("../img/alan.jpg");
+  background-size: cover;
+  background-position: center;
+  border: 5px solid #B6A259; }
+
+#character-img-3 {
+  height: 25vw;
+  background-image: url("../img/nerdy.png");
+  background-size: cover;
+  background-position: center;
+  border: 5px solid #B6A259; }
+
+.carousel {
+  max-width: 100%; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  background-color: #F8F1D4;
+  background-size: contain; }
+
+#park {
+  height: 100vh; }
+
+#tickets {
+  height: 100vh;
+  background-image: url("../img/contact.png");
+  background-size: cover; }
+  #tickets h2 {
+    font-size: 5em;
+    color: #68291A; }
