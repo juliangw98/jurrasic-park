@@ -1,6 +1,7 @@
 #dino {
   min-height: 100vh;
   background-color: #EAE0B9;
+  padding: 15px;
 
   h2 {
     color: $primary;
@@ -20,6 +21,7 @@
 .swiper-container {
   width: 100%;
   height: 25vh;
+  overflow:hidden;
 }
 
 .swiper-slide {
