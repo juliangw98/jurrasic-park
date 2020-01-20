@@ -8188,7 +8188,7 @@ a {
       background-color: white;
       padding: 16px;
       border: 2px solid #B6A259;
-      height: 35vh; }
+      height: 25vh; }
       #console #display .active {
         background-color: white;
         color: black; }
@@ -8427,6 +8427,9 @@ html {
 body {
   background-color: #F8F1D4;
   background-size: contain; }
+
+#park {
+  height: 100vh; }
 
 #tickets {
   height: 100vh;
