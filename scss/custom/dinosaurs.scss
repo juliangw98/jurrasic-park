@@ -21,7 +21,7 @@
 .swiper-container {
   width: 100%;
   height: 25vh;
-  overflow:hidden;
+  overflow: hidden;
 }
 
 .swiper-slide {
@@ -42,14 +42,13 @@
   -webkit-align-items: center;
   align-items: center;
   transform: scale(.9);
-  transition: .2s ease-in;
-
+  transition: 0.2s ease-in;
 }
 
 .swiper-slide.swiper-slide-active {
   opacity: 1;
-    transform: scale(2);
-    transition: .2s ease-in;
+  transform: scale(2);
+  transition: 0.2s ease-in;
 }
 
 .dino-1 {
@@ -72,80 +71,95 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
+@include media-breakpoint-up(sm) {}
+@include media-breakpoint-up(md) {
+  #dino {
+    min-height: 100vh;
+    background-color: #EAE0B9;
 
-@include media-breakpoint-up(sm) {  }
-@include media-breakpoint-up(md) {#dino {
-  min-height: 100vh;
-  background-color: #EAE0B9;
+    h2 {
+      color: $primary;
+      font-size: 5em;
+    }
+    #dino-title{
+      font-size: 3em;
+    }
 
-  h2 {
-    color: $primary;
-    font-size: 5em;
+    .swiper-button-prev:after {
+      content: ''!important;
+    }
+
+    .description-box {
+      background-color: #FFFAE7;
+      padding: 24px;
+    }
   }
 
-  .swiper-button-prev:after {
-    content: ''!important;
+  .swiper-container {
+    width: 100%;
+    height: 40vh;
   }
 
-  .description-box {
-    background-color: #FFFAE7;
-    padding: 24px;
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    opacity: 0.5;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    transform: scale(.7);
+    transition: 0.2s ease-in;
+  }
+
+  .swiper-slide.swiper-slide-active {
+    opacity: 1;
+    transform: scale(1.4);
+    transition: 0.2s ease-in;
+  }
+
+  .dino-1 {
+    background-image: url("../img/dino1.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .dino-1.swiper-slide.swiper-slide-active {
+    opacity: 1;
+    transform: scale(1)!important;
+    transition: 0.2s ease-in;
+  }
+
+  .dino-1.swiper-slide {
+    opacity: 1;
+    transform: scale(.5)!important;
+    transition: 0.2s ease-in;
+    opacity: 0.5;
+  }
+
+  .dino-2 {
+    background-image: url("../img/dino2.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .dino-3 {
+    background-image: url("../img/dino3.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 }
-
-.swiper-container {
-  width: 100%;
-  height: 40vh;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  opacity: 0.5;
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-  transform: scale(.7);
-  transition: .2s ease-in;
-
-}
-
-.swiper-slide.swiper-slide-active {
-  opacity: 1;
-    transform: scale(1);
-    transition: .2s ease-in;
-}
-
-.dino-1 {
-  background-image: url("../img/dino1.png");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.dino-2 {
-  background-image: url("../img/dino2.png");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.dino-3 {
-  background-image: url("../img/dino3.png");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-  }
-@include media-breakpoint-up(lg) {  }
-@include media-breakpoint-up(xl) {  }
+@include media-breakpoint-up(lg) {}
+@include media-breakpoint-up(xl) {}

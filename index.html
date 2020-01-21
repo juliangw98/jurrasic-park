@@ -18,7 +18,7 @@
     </head>
 
     <body>
-        <section id="explore">
+        <section class="explore">
             <div id="intro-block">
                 <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <rect width="100" height="100" fill="url(#pattern0)" />
@@ -111,9 +111,10 @@
                     <div class="col-12 col-lg-8 mx-auto">
                         <div class="swiper-container">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide dino-1"></div>
-                                <div class="swiper-slide dino-2"></div>
-                                <div class="swiper-slide dino-3"></div>
+                                <div id="dino-1" class="swiper-slide dino-1"></div>
+                                <div id="dino-2" class="swiper-slide dino-2"></div>
+                                <div id="dino-3" class="swiper-slide dino-3"></div>
+
 
                             </div>
                             <!-- Add Pagination -->
@@ -125,12 +126,13 @@
                 </div>
                 <div class="row">
                     <div class="col-12 col-lg-8 description-box mt-5 mx-auto mb-5">
-                        <h2>Triceratops</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                            laborum.</p>
-                        <a class="button-prev btn btn-primary">previous</a>
-                        <a class="button-next btn btn-primary">next</a>
+                        <h2 id="dino-title">Triceratops</h2>
+                        <p id="dino-description">Triceratops is a genus of herbivorous ceratopsid dinosaur that first appeared during the late Maastrichtian stage of the late Cretaceous period, about 68 million years ago (mya) in what is now North
+                            America. It is one of the last known non-avian dinosaur genera, and became extinct in the Cretaceous–Paleogene extinction event 66 million years ago.</p>
+                        <a class="dino-switch button-prev btn btn-primary">previous</a>
+                        <a class="dino-switch button-next btn btn-primary">next</a>
+                        <a class="btn dark" href="#characters">Meet the Characters</a>
+
 
                     </div>
                 </div>
@@ -144,7 +146,7 @@
         <section id="characters">
             <div class="container-fluid">
                 <div class="row  mt-5">
-                    <h2 class="col-lg-8 text-right offset-lg-3 mb-3">Meet the Characters</h2>
+                    <h2 class="col-lg-8 text-right offset-lg-3 mb-3">The Characters</h2>
                 </div>
 
 
@@ -156,10 +158,10 @@
                     <div class="col-12 col-lg-8 offset-lg-3">
                         <div id="carouselExampleFade" class="carousel slide carousel-fade">
                             <div class="carousel-inner">
-                                <div class="carousel-item active row">
-                                    <div id="character-img-1" class="col-12 mb-3"></div>
+                                <div class="carousel-item active row mt-5 ">
+                                    <div id="character-img-1" class="col-12 col-lg-5 order-lg-2 col-md-8 mx-md-auto mb-3"></div>
 
-                                    <div class="col-12 col-lg-5 ">
+                                    <div class="col-12 col-md-8 col-lg-6  mx-md-auto ">
                                         <h2>Dr. John Alfred</h2>
                                         <p> the CEO and creator of Jurassic Park. He founded the company InGen and the Hammond Foundation. He had at least one daughter, two grandchildren (Tim and Lex Murphy), a sister (as Hammond's nephew has the
                                             surname of Ludlow, not Hammond) and a nephew, Peter Ludlow.</p>
@@ -167,9 +169,9 @@
 
                                 </div>
                                 <div class="carousel-item  mt-5 row">
-                                    <div id="character-img-2" class="col-12 mb-3"></div>
+                                    <div id="character-img-2" class="col-12 col-lg-5 order-lg-2 col-md-8 mx-md-auto mb-3"></div>
 
-                                    <div class="col-12 col-lg-5 ">
+                                    <div class="col-12 col-md-8 col-lg-6  mx-md-auto ">
                                         <h2>Alan Grant</h2>
                                         <p>Dr. Alan Grant is one of the main characters in the Jurassic Park franchise and the main protagonist in the first Jurassic Park and Jurassic Park III. He is a paleontologist who was invited by John Hammond
                                             to his dinosaur park, Jurassic Park.</p>
@@ -178,19 +180,19 @@
 
                                 </div>
                                 <div class="carousel-item  mt-5 row">
-                                    <div id="character-img-3" class="col-12 mb-3"></div>
+                                    <div id="character-img-3" class="col-12 col-lg-5 order-lg-2 col-md-8 mx-md-auto mb-3"></div>
 
-                                    <div class="col-12 col-lg-5 ">
+                                    <div class="col-12 col-md-8 col-lg-6  mx-md-auto ">
                                         <h2>Dennis Nedry</h2>
-                                            <p> Dennis Nedry was a computer programmer at Jurassic Park and a minor antagonist. Due to his financial problems and low salary, he accepted a bribe from Biosyn to smuggle dinosaur embryos off the island.
-                                                His
-                                                last name is an anagram of nerdy.</p>
+                                        <p> Dennis Nedry was a computer programmer at Jurassic Park and a minor antagonist. Due to his financial problems and low salary, he accepted a bribe from Biosyn to smuggle dinosaur embryos off the island.
+                                            His
+                                            last name is an anagram of nerdy.</p>
                                     </div>
 
                                 </div>
                             </div>
                         </div>
-                        <a class="btn btn-primary" id="character-btn" href="#carouselExampleFade" role="button" data-slide="next">
+                        <a class="btn btn-primary offset-md-2 offset-lg-0 ml-4" id="character-btn" href="#carouselExampleFade" role="button" data-slide="next">
                             next character
                         </a>
 
@@ -219,11 +221,12 @@
 
 
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
         <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+
 
 
         <script type="text/javascript" src="js/main.js">

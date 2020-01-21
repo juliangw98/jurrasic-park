@@ -50,7 +50,19 @@
     min-height: 100vh;
 
     .carousel-item {
-      display: flex;
+      div {
+        display: flex;
+        align-self: flex-end;
+        flex-direction: column;
+      }
+
+      h2 {
+        font-size: 2.5em;
+      }
+
+      p {
+        font-size: 18px;
+      }
     }
   }
 }

@@ -8152,11 +8152,15 @@ a {
 p {
   font-size: 14px; }
 
+.dark {
+  background-color: #B6A259;
+  color: #F8F1D4; }
+
 @media (min-width: 768px) {
   p {
     font-size: 16px; } }
 
-#explore {
+.explore {
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8167,7 +8171,7 @@ p {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
-  #explore #intro-block {
+  .explore #intro-block {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -8178,7 +8182,7 @@ p {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
-    #explore #intro-block h1 {
+    .explore #intro-block h1 {
       color: black; }
 
 @media (max-width: 767.98px) {
@@ -8285,18 +8289,18 @@ p {
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
-  -webkit-transition: .2s ease-in;
-  -o-transition: .2s ease-in;
-  transition: .2s ease-in; }
+  -webkit-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in; }
 
 .swiper-slide.swiper-slide-active {
   opacity: 1;
   -webkit-transform: scale(2);
   -ms-transform: scale(2);
   transform: scale(2);
-  -webkit-transition: .2s ease-in;
-  -o-transition: .2s ease-in;
-  transition: .2s ease-in; }
+  -webkit-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in; }
 
 .dino-1 {
   background-image: url("../img/dino1.png");
@@ -8323,6 +8327,8 @@ p {
     #dino h2 {
       color: #68291A;
       font-size: 5em; }
+    #dino #dino-title {
+      font-size: 3em; }
     #dino .swiper-button-prev:after {
       content: "" !important; }
     #dino .description-box {
@@ -8351,22 +8357,39 @@ p {
     -webkit-transform: scale(0.7);
     -ms-transform: scale(0.7);
     transform: scale(0.7);
-    -webkit-transition: .2s ease-in;
-    -o-transition: .2s ease-in;
-    transition: .2s ease-in; }
+    -webkit-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
+    transition: 0.2s ease-in; }
   .swiper-slide.swiper-slide-active {
     opacity: 1;
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-    -webkit-transition: .2s ease-in;
-    -o-transition: .2s ease-in;
-    transition: .2s ease-in; }
+    -webkit-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    transform: scale(1.4);
+    -webkit-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
+    transition: 0.2s ease-in; }
   .dino-1 {
     background-image: url("../img/dino1.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat; }
+  .dino-1.swiper-slide.swiper-slide-active {
+    opacity: 1;
+    -webkit-transform: scale(1) !important;
+    -ms-transform: scale(1) !important;
+    transform: scale(1) !important;
+    -webkit-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
+    transition: 0.2s ease-in; }
+  .dino-1.swiper-slide {
+    opacity: 1;
+    -webkit-transform: scale(0.5) !important;
+    -ms-transform: scale(0.5) !important;
+    transform: scale(0.5) !important;
+    -webkit-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
+    transition: 0.2s ease-in;
+    opacity: 0.5; }
   .dino-2 {
     background-image: url("../img/dino2.png");
     background-position: center;
@@ -8421,10 +8444,20 @@ p {
     #characters h2 {
       color: #68291A;
       font-size: 4em; }
-    #characters .carousel-item {
+    #characters .carousel-item div {
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex; } }
+      display: flex;
+      -ms-flex-item-align: end;
+      align-self: flex-end;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+    #characters .carousel-item h2 {
+      font-size: 2.5em; }
+    #characters .carousel-item p {
+      font-size: 18px; } }
 
 * {
   padding: 0;
