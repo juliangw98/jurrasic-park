@@ -12,7 +12,7 @@
 
 #character-img-1 {
   margin-left: 15px;
-  height: 35vh;
+  height: 50vh;
   background-image: url("../img/prof.jpg");
   background-size: cover;
   background-position: center;
@@ -21,7 +21,7 @@
 
 #character-img-2 {
   margin-left: 15px;
-  height: 35vh;
+  height: 50vh;
   background-image: url("../img/alan.jpg");
   background-size: cover;
   background-position: center;
@@ -30,7 +30,7 @@
 
 #character-img-3 {
   margin-left: 15px;
-  height: 35vh;
+  height: 50vh;
   background-image: url("../img/nerdy.png");
   background-size: cover;
   background-position: center;
@@ -42,6 +42,32 @@
 }
 @include media-breakpoint-up(sm) {}
 @include media-breakpoint-up(md) {
+  #character-img-1 {
+    margin-left: 15px;
+    height: 50vh;
+    background-image: url("../img/prof.jpg");
+    background-size: cover;
+    background-position: center;
+    border: 5px solid #B6A259;
+  }
+
+  #character-img-2 {
+    margin-left: 15px;
+    height: 50vh;
+    background-image: url("../img/alan.jpg");
+    background-size: cover;
+    background-position: center;
+    border: 5px solid #B6A259;
+  }
+
+  #character-img-3 {
+    margin-left: 15px;
+    height: 50vh;
+    background-image: url("../img/nerdy.png");
+    background-size: cover;
+    background-position: center;
+    border: 5px solid #B6A259;
+  }
   #characters {
     h2 {
       color: $primary;

@@ -6,6 +6,8 @@
  */
 @import url("https://fonts.googleapis.com/css?family=Baloo+Bhaina|Work+Sans&display=swap");
 @import url("https://use.typekit.net/jit4aly.css");
+@import url("https://fonts.googleapis.com/css?family=Baloo+Bhaina|Work+Sans&display=swap");
+@import url("https://use.typekit.net/jit4aly.css");
 :root {
   --blue: #68291A;
   --indigo: #6610f2;
@@ -8164,6 +8166,7 @@ p {
     font-size: 16px; } }
 
 .explore {
+  z-index: 15;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8413,7 +8416,7 @@ p {
 
 #character-img-1 {
   margin-left: 15px;
-  height: 35vh;
+  height: 50vh;
   background-image: url("../img/prof.jpg");
   background-size: cover;
   background-position: center;
@@ -8421,7 +8424,7 @@ p {
 
 #character-img-2 {
   margin-left: 15px;
-  height: 35vh;
+  height: 50vh;
   background-image: url("../img/alan.jpg");
   background-size: cover;
   background-position: center;
@@ -8429,7 +8432,7 @@ p {
 
 #character-img-3 {
   margin-left: 15px;
-  height: 35vh;
+  height: 50vh;
   background-image: url("../img/nerdy.png");
   background-size: cover;
   background-position: center;
@@ -8439,6 +8442,27 @@ p {
   max-width: 100%; }
 
 @media (min-width: 768px) {
+  #character-img-1 {
+    margin-left: 15px;
+    height: 50vh;
+    background-image: url("../img/prof.jpg");
+    background-size: cover;
+    background-position: center;
+    border: 5px solid #B6A259; }
+  #character-img-2 {
+    margin-left: 15px;
+    height: 50vh;
+    background-image: url("../img/alan.jpg");
+    background-size: cover;
+    background-position: center;
+    border: 5px solid #B6A259; }
+  #character-img-3 {
+    margin-left: 15px;
+    height: 50vh;
+    background-image: url("../img/nerdy.png");
+    background-size: cover;
+    background-position: center;
+    border: 5px solid #B6A259; }
   #characters {
     min-height: 100vh; }
     #characters h2 {
@@ -8458,6 +8482,38 @@ p {
       font-size: 2.5em; }
     #characters .carousel-item p {
       font-size: 18px; } }
+
+#menu {
+  display: none; }
+
+@media (min-width: 992px) {
+  .show {
+    height: 330px !important;
+    -webkit-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease; }
+  #menu {
+    background-color: #F8F1D4;
+    z-index: 10;
+    display: block;
+    position: fixed;
+    top: 0;
+    height: 0px;
+    overflow: hidden;
+    -webkit-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease;
+    padding-top: 20px; }
+    #menu ul {
+      border: 5px solid #B6A259;
+      list-style-type: none;
+      margin-bottom: 0; }
+      #menu ul li {
+        padding: 10px;
+        margin: 20px 0; }
+        #menu ul li a {
+          margin-left: 20px;
+          color: #B6A259; } }
 
 * {
   padding: 0;
