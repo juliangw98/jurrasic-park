@@ -27,6 +27,11 @@ p{
 .dark {
   background-color: #B6A259;
   color: #F8F1D4;
+  &:hover{
+    background-color: #C6A259;
+
+    color:#F8F1D4;
+  }
 }
 @include media-breakpoint-up(sm) {
 

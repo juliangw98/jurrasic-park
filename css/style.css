@@ -8155,6 +8155,9 @@ p {
 .dark {
   background-color: #B6A259;
   color: #F8F1D4; }
+  .dark:hover {
+    background-color: #C6A259;
+    color: #F8F1D4; }
 
 @media (min-width: 768px) {
   p {
@@ -8213,10 +8216,7 @@ p {
       background-color: #68291A;
       border: 0;
       color: white;
-      padding-top: 10px; }
-    #console .dark {
-      background-color: #B6A259;
-      color: #F8F1D4; } }
+      padding-top: 10px; } }
 
 @media (min-width: 768px) {
   #console-img {
