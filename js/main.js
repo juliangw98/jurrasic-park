@@ -27,7 +27,7 @@ var section4 = height * 4;
 console.log(section2);
 console.log(section3);
 console.log(section4);
-                if ($(this).scrollTop() > height &&$(this).scrollTop()  < section2) {
+                if ($(this).scrollTop() >= height &&$(this).scrollTop()  < section2) {
                   $('#menu').addClass('show');
                   $('.park').css("color", "#68291A");
                   $('.dino').css("color", "#B6A259")
@@ -36,14 +36,14 @@ console.log(section4);
 
 
 
-                } else if ($(this).scrollTop() > section2 && $(this).scrollTop()  < section3 ) {
+                } else if ($(this).scrollTop() >= section2 && $(this).scrollTop()  < section3 ) {
                   $('#menu').addClass('show');
                   $('.park').css("color", "#B6A259");
                   $('.dino').css("color", "#68291A")
                   $('.character').css("color", "#B6A259")
                   $('.ticket').css("color", "#B6A259")
                 }
-                else if ($(this).scrollTop() > section3 && $(this).scrollTop() < section4) {
+                else if ($(this).scrollTop() >= section3 && $(this).scrollTop() < section4) {
                   $('#menu').addClass('show');
                   $('.park').css("color", "#B6A259");
                   $('.dino').css("color", "#B6A259")
@@ -51,7 +51,7 @@ console.log(section4);
                   $('.ticket').css("color", "#B6A259")
 
                 }
-                else if ($(this).scrollTop() > section4 ) {
+                else if ($(this).scrollTop() >= section4 ) {
                   $('#menu').addClass('show');
                   $('.park').css("color", "#B6A259");
                   $('.dino').css("color", "#B6A259")
