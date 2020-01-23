@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  // $('#menu').css('padding','0')
+    // $('#menu').css('padding','0')
     // Dinosaurus slider
     var swiper = new Swiper('.swiper-container', {
         navigation: {
@@ -18,59 +18,54 @@ $(document).ready(function() {
 
 
     $(window).scroll(function() {
-                // checks if window is scrolled more than 500px, adds/removes solid class
-var height = window.innerHeight;
-var section2 = height * 2;
-var section3 = height * 3;
-var section4 = height * 4;
+        // checks if window is scrolled more than 500px, adds/removes solid class
+        var height = window.innerHeight;
+        var section2 = height * 2;
+        var section3 = height * 3;
+        var section4 = height * 4;
 
-console.log(section2);
-console.log(section3);
-console.log(section4);
-                if ($(this).scrollTop() >= height &&$(this).scrollTop()  < section2) {
-                  $('#menu').addClass('show');
-                  $('.park').css("color", "#68291A");
-                  $('.dino').css("color", "#B6A259")
-                  $('.character').css("color", "#B6A259")
-                  $('.ticket').css("color", "#B6A259")
-
-
-
-                } else if ($(this).scrollTop() >= section2 && $(this).scrollTop()  < section3 ) {
-                  $('#menu').addClass('show');
-                  $('.park').css("color", "#B6A259");
-                  $('.dino').css("color", "#68291A")
-                  $('.character').css("color", "#B6A259")
-                  $('.ticket').css("color", "#B6A259")
-                }
-                else if ($(this).scrollTop() >= section3 && $(this).scrollTop() < section4) {
-                  $('#menu').addClass('show');
-                  $('.park').css("color", "#B6A259");
-                  $('.dino').css("color", "#B6A259")
-                  $('.character').css("color", "#68291A")
-                  $('.ticket').css("color", "#B6A259")
-
-                }
-                else if ($(this).scrollTop() >= section4 ) {
-                  $('#menu').addClass('show');
-                  $('.park').css("color", "#B6A259");
-                  $('.dino').css("color", "#B6A259")
-                  $('.character').css("color", "#B6A259")
-                  $('.ticket').css("color", "#68291A")
-
-                }
-
-                else if ($(this).scrollTop() < height ) {
-                  $('#menu').removeClass('show');
-                  // $('#menu').css('padding','0')
-
-                }
-                else {
-
-                }
+        console.log(section2);
+        console.log(section3);
+        console.log(section4);
+        if ($(this).scrollTop() >= height && $(this).scrollTop() < section2) {
+            $('#menu').addClass('show');
+            $('.park').css("color", "#68291A");
+            $('.dino').css("color", "#B6A259")
+            $('.character').css("color", "#B6A259")
+            $('.ticket').css("color", "#B6A259")
 
 
-            });
+
+        } else if ($(this).scrollTop() >= section2 && $(this).scrollTop() < section3) {
+            $('#menu').addClass('show');
+            $('.park').css("color", "#B6A259");
+            $('.dino').css("color", "#68291A")
+            $('.character').css("color", "#B6A259")
+            $('.ticket').css("color", "#B6A259")
+        } else if ($(this).scrollTop() >= section3 && $(this).scrollTop() < section4) {
+            $('#menu').addClass('show');
+            $('.park').css("color", "#B6A259");
+            $('.dino').css("color", "#B6A259")
+            $('.character').css("color", "#68291A")
+            $('.ticket').css("color", "#B6A259")
+
+        } else if ($(this).scrollTop() >= section4) {
+            $('#menu').addClass('show');
+            $('.park').css("color", "#B6A259");
+            $('.dino').css("color", "#B6A259")
+            $('.character').css("color", "#B6A259")
+            $('.ticket').css("color", "#68291A")
+
+        } else if ($(this).scrollTop() < height) {
+            $('#menu').removeClass('show');
+            // $('#menu').css('padding','0')
+
+        } else {
+
+        }
+
+
+    });
     //console images switch
     $('#pills-island-tab').click(function() {
         document.getElementById("console-img").style.backgroundImage = 'url("img/map.png")';
@@ -94,7 +89,7 @@ console.log(section4);
 
     });
 
-//dinosaur text
+    //dinosaur text
     $('.dino-switch').click(function() {
         // alert('ckick')
         if ($('#dino-1').hasClass("swiper-slide-active")) {

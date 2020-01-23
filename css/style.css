@@ -8154,6 +8154,13 @@ a {
 p {
   font-size: 14px; }
 
+a {
+  position: relative;
+  color: #B6A259;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  border: 3px solid #B6A259; }
+
 .dark {
   background-color: #B6A259;
   color: #F8F1D4; }
@@ -8164,6 +8171,10 @@ p {
 @media (min-width: 768px) {
   p {
     font-size: 16px; } }
+
+@media (min-width: 992px) {
+  p {
+    font-size: 18px; } }
 
 .explore {
   z-index: 15;
@@ -8191,68 +8202,41 @@ p {
     .explore #intro-block h1 {
       color: black; }
 
-@media (max-width: 767.98px) {
-  #console-img {
-    background-image: url("../img/map.png");
-    height: 40vh;
-    background-size: cover; }
-  #console {
-    border: 5px solid #B6A259;
-    padding: 24px;
-    background-color: #F8F1D4; }
-    #console #display {
-      overflow: scroll;
+#park {
+  height: 100vh; }
+
+#console-img {
+  background-image: url("../img/map.png");
+  height: 40vh;
+  background-size: cover; }
+
+#console {
+  border: 5px solid #B6A259;
+  padding: 24px;
+  background-color: #F8F1D4; }
+  #console #display {
+    overflow: scroll;
+    background-color: white;
+    padding: 16px;
+    border: 2px solid #B6A259;
+    height: 25vh; }
+    #console #display .active {
       background-color: white;
-      padding: 16px;
-      border: 2px solid #B6A259;
-      height: 25vh; }
-      #console #display .active {
-        background-color: white;
-        color: black; }
-    #console a {
-      position: relative;
-      color: #B6A259;
-      margin-right: 8px;
-      margin-bottom: 8px;
-      border: 3px solid #B6A259; }
-    #console .active {
-      background-color: #68291A;
-      border: 0;
-      color: white;
-      padding-top: 10px; } }
+      color: black; }
+  #console .active {
+    background-color: #68291A;
+    border: 0;
+    color: white;
+    padding-top: 10px; }
 
 @media (min-width: 768px) {
   #console-img {
-    background-image: url("../img/map.png");
-    height: 100vh;
-    background-size: cover; }
+    height: 100vh; }
   #console {
     height: 100vh;
-    border: 5px solid #B6A259;
     padding: 24px; }
     #console #display {
-      overflow: scroll;
-      background-color: white;
-      padding: 16px;
-      border: 2px solid #B6A259;
-      height: 40vh; }
-      #console #display .active {
-        background-color: white;
-        color: black; }
-    #console a {
-      position: relative;
-      color: #B6A259;
-      margin-right: 8px;
-      margin-bottom: 8px;
-      border: 3px solid #B6A259; }
-    #console .active {
-      background-color: #68291A;
-      border: 0;
-      color: white;
-      padding-top: 10px; }
-    #console .dark {
-      background-color: #B6A259;
-      color: #F8F1D4; } }
+      height: 40vh; } }
 
 #dino {
   min-height: 100vh;
@@ -8260,12 +8244,13 @@ p {
   padding: 15px; }
   #dino h2 {
     color: #68291A;
-    font-size: 2em; }
-  #dino .swiper-button-prev:after {
-    content: "" !important; }
+    font-size: 2.5em; }
   #dino .description-box {
     background-color: #FFFAE7;
     padding: 24px; }
+    #dino .description-box h2 {
+      color: #68291A;
+      font-size: 2em; }
 
 .swiper-container {
   width: 100%;
@@ -8305,23 +8290,22 @@ p {
   -o-transition: 0.2s ease-in;
   transition: 0.2s ease-in; }
 
-.dino-1 {
-  background-image: url("../img/dino1.png");
+.swiper-button-prev:after {
+  content: "" !important; }
+
+.dino {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat; }
 
-.dino-2 {
-  background-image: url("../img/dino2.png");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat; }
+#dino-1 {
+  background-image: url("../img/dino1.png"); }
 
-.dino-3 {
-  background-image: url("../img/dino3.png");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat; }
+#dino-2 {
+  background-image: url("../img/dino2.png"); }
+
+#dino-3 {
+  background-image: url("../img/dino3.png"); }
 
 @media (min-width: 768px) {
   #dino {
@@ -8332,8 +8316,6 @@ p {
       font-size: 5em; }
     #dino #dino-title {
       font-size: 3em; }
-    #dino .swiper-button-prev:after {
-      content: "" !important; }
     #dino .description-box {
       background-color: #FFFAE7;
       padding: 24px; }
@@ -8341,28 +8323,11 @@ p {
     width: 100%;
     height: 40vh; }
   .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    opacity: 0.5;
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
     -webkit-transform: scale(0.7);
     -ms-transform: scale(0.7);
-    transform: scale(0.7);
-    -webkit-transition: 0.2s ease-in;
-    -o-transition: 0.2s ease-in;
-    transition: 0.2s ease-in; }
+    transform: scale(0.7); }
+  .swiper-button-prev:after {
+    content: "" !important; }
   .swiper-slide.swiper-slide-active {
     opacity: 1;
     -webkit-transform: scale(1.2);
@@ -8371,12 +8336,7 @@ p {
     -webkit-transition: 0.2s ease-in;
     -o-transition: 0.2s ease-in;
     transition: 0.2s ease-in; }
-  .dino-1 {
-    background-image: url("../img/dino1.png");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat; }
-  .dino-1.swiper-slide.swiper-slide-active {
+  #dino-1.swiper-slide.swiper-slide-active {
     opacity: 1;
     -webkit-transform: scale(1) !important;
     -ms-transform: scale(1) !important;
@@ -8384,7 +8344,7 @@ p {
     -webkit-transition: 0.2s ease-in;
     -o-transition: 0.2s ease-in;
     transition: 0.2s ease-in; }
-  .dino-1.swiper-slide {
+  #dino-1.swiper-slide {
     opacity: 1;
     -webkit-transform: scale(0.5) !important;
     -ms-transform: scale(0.5) !important;
@@ -8392,96 +8352,55 @@ p {
     -webkit-transition: 0.2s ease-in;
     -o-transition: 0.2s ease-in;
     transition: 0.2s ease-in;
-    opacity: 0.5; }
-  .dino-2 {
-    background-image: url("../img/dino2.png");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat; }
-  .dino-3 {
-    background-image: url("../img/dino3.png");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat; } }
+    opacity: 0.5; } }
 
 #characters {
   min-height: 100vh; }
   #characters h2 {
     color: #68291A;
-    font-size: 2em; }
+    font-size: 2.5em; }
   #characters .carousel-item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+    #characters .carousel-item h2 {
+      font-size: 2em; }
+
+.characters {
+  margin-left: 15px;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  border: 5px solid #B6A259; }
 
 #character-img-1 {
-  margin-left: 15px;
-  height: 50vh;
-  background-image: url("../img/prof.jpg");
-  background-size: cover;
-  background-position: center;
-  border: 5px solid #B6A259; }
+  background-image: url("../img/prof.jpg"); }
 
 #character-img-2 {
-  margin-left: 15px;
-  height: 50vh;
-  background-image: url("../img/alan.jpg");
-  background-size: cover;
-  background-position: center;
-  border: 5px solid #B6A259; }
+  background-image: url("../img/alan.jpg"); }
 
 #character-img-3 {
-  margin-left: 15px;
-  height: 50vh;
-  background-image: url("../img/nerdy.png");
-  background-size: cover;
-  background-position: center;
-  border: 5px solid #B6A259; }
+  background-image: url("../img/nerdy.png"); }
 
 .carousel {
   max-width: 100%; }
 
 @media (min-width: 768px) {
-  #character-img-1 {
-    margin-left: 15px;
-    height: 50vh;
-    background-image: url("../img/prof.jpg");
-    background-size: cover;
-    background-position: center;
-    border: 5px solid #B6A259; }
-  #character-img-2 {
-    margin-left: 15px;
-    height: 50vh;
-    background-image: url("../img/alan.jpg");
-    background-size: cover;
-    background-position: center;
-    border: 5px solid #B6A259; }
-  #character-img-3 {
-    margin-left: 15px;
-    height: 50vh;
-    background-image: url("../img/nerdy.png");
-    background-size: cover;
-    background-position: center;
-    border: 5px solid #B6A259; }
-  #characters {
-    min-height: 100vh; }
-    #characters h2 {
-      color: #68291A;
-      font-size: 4em; }
-    #characters .carousel-item div {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-item-align: end;
-      align-self: flex-end;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column; }
-    #characters .carousel-item h2 {
-      font-size: 2.5em; }
-    #characters .carousel-item p {
-      font-size: 18px; } }
+  #characters h2 {
+    color: #68291A;
+    font-size: 4em; }
+  #characters .carousel-item div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  #characters .carousel-item h2 {
+    font-size: 2.5em; } }
 
 #menu {
   display: none; }
@@ -8513,7 +8432,8 @@ p {
         margin: 20px 0; }
         #menu ul li a {
           margin-left: 20px;
-          color: #B6A259; } }
+          color: #B6A259;
+          border: none; } }
 
 * {
   padding: 0;
@@ -8526,13 +8446,16 @@ body {
   background-color: #F8F1D4;
   background-size: contain; }
 
-#park {
-  height: 100vh; }
-
 #tickets {
   height: 100vh;
   background-image: url("../img/contact.png");
-  background-size: cover; }
+  background-size: cover;
+  padding-top: 20vh; }
+  #tickets form {
+    background-color: #EAE0B9; }
+    #tickets form button {
+      font-family: african; }
   #tickets h2 {
-    font-size: 5em;
-    color: #68291A; }
+    font-size: 2em;
+    color: #68291A;
+    border-bottom: 3px solid #F8F1D4; }

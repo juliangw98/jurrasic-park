@@ -7,7 +7,6 @@
 
 body {
   font-family: 'Work Sans';
-
 }
 
 h1,
@@ -16,35 +15,40 @@ h3 {
   font-family: african;
 }
 
-a{
+a {
   font-family: african;
 }
 
-p{
+p {
   font-size: 14px;
+}
+
+a {
+  position: relative;
+  color: #B6A259;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  border: 3px solid #B6A259;
 }
 
 .dark {
   background-color: #B6A259;
   color: #F8F1D4;
-  &:hover{
-    background-color: #C6A259;
 
-    color:#F8F1D4;
+  &:hover {
+    background-color: #C6A259;
+    color: #F8F1D4;
   }
 }
-@include media-breakpoint-up(sm) {
-
-}
+@include media-breakpoint-up(sm) {}
 @include media-breakpoint-up(md) {
-  p{
+  p {
     font-size: 16px;
   }
-
 }
 @include media-breakpoint-up(lg) {
-
+  p {
+    font-size: 18px;
+  }
 }
-@include media-breakpoint-up(xl) {
-
-}
+@include media-breakpoint-up(xl) {}

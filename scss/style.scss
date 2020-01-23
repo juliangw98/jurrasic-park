@@ -63,18 +63,22 @@ body {
   background-size: contain;
 }
 
-#park {
-  height: 100vh;
-}
-
 
 #tickets {
   height: 100vh;
   background-image: url("../img/contact.png");
   background-size: cover;
+  padding-top: 20vh;
+form{
+  background-color: #EAE0B9;
+  button{
+    font-family: african;
 
+  }
+}
   h2 {
-    font-size: 5em;
+    font-size: 2em;
     color: $primary;
+    border-bottom: 3px solid #F8F1D4;
   }
 }

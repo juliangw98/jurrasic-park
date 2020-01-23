@@ -1,40 +1,37 @@
 #characters {
+  min-height: 100vh;
+
   h2 {
     color: $primary;
-    font-size: 2em;
+    font-size: 2.5em;
   }
-  min-height: 100vh;
 
   .carousel-item {
     display: flex;
+    h2 {
+      font-size: 2em;
+    }
   }
 }
 
-#character-img-1 {
+.characters {
   margin-left: 15px;
   height: 50vh;
-  background-image: url("../img/prof.jpg");
   background-size: cover;
   background-position: center;
   border: 5px solid #B6A259;
+}
+
+#character-img-1 {
+  background-image: url("../img/prof.jpg");
 }
 
 #character-img-2 {
-  margin-left: 15px;
-  height: 50vh;
   background-image: url("../img/alan.jpg");
-  background-size: cover;
-  background-position: center;
-  border: 5px solid #B6A259;
 }
 
 #character-img-3 {
-  margin-left: 15px;
-  height: 50vh;
   background-image: url("../img/nerdy.png");
-  background-size: cover;
-  background-position: center;
-  border: 5px solid #B6A259;
 }
 
 .carousel {
@@ -42,38 +39,12 @@
 }
 @include media-breakpoint-up(sm) {}
 @include media-breakpoint-up(md) {
-  #character-img-1 {
-    margin-left: 15px;
-    height: 50vh;
-    background-image: url("../img/prof.jpg");
-    background-size: cover;
-    background-position: center;
-    border: 5px solid #B6A259;
-  }
 
-  #character-img-2 {
-    margin-left: 15px;
-    height: 50vh;
-    background-image: url("../img/alan.jpg");
-    background-size: cover;
-    background-position: center;
-    border: 5px solid #B6A259;
-  }
-
-  #character-img-3 {
-    margin-left: 15px;
-    height: 50vh;
-    background-image: url("../img/nerdy.png");
-    background-size: cover;
-    background-position: center;
-    border: 5px solid #B6A259;
-  }
   #characters {
     h2 {
       color: $primary;
       font-size: 4em;
     }
-    min-height: 100vh;
 
     .carousel-item {
       div {
@@ -84,10 +55,6 @@
 
       h2 {
         font-size: 2.5em;
-      }
-
-      p {
-        font-size: 18px;
       }
     }
   }
